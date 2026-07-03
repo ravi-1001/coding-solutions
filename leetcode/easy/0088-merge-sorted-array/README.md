@@ -60,9 +60,9 @@ Note that because m = 0, there are no elements in nums1. The 0 is only there to 
 ## Solution
 
 **Language:** C++  
-**Runtime:** 0 ms  
-**Memory:** 8.5 MB  
-**Submitted:** 2026-07-03T13:20:56.962Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 12.3 MB (beats 72.98%)  
+**Submitted:** 2026-07-03T13:23:02.763Z  
 
 ```cpp
 class Solution {
