@@ -1,0 +1,81 @@
+# CANDYSTORE - Rating 429
+
+![Difficulty](https://img.shields.io/badge/Difficulty-Easy-green)
+
+## Problem
+
+### Candy Store
+
+Chef has started working at the candy store. The store has $100$ chocolates in total.
+
+Chef’s daily goal is to sell $X$ chocolates. For each chocolate sold, he will get $1$ rupee. However, if Chef exceeds his daily goal, he gets $2$ rupees per chocolate for each  **extra**  chocolate.
+
+If Chef sells $Y$ chocolates in a day, find the total amount he made.
+
+### Input Format
+- The first line of input will contain a single integer $T$, denoting the number of test cases.
+- Each test case consists of two space-separated integers $X$ and $Y$ — the daily goal of Chef, and the number of chocolates he actually sells.
+### Output Format
+
+For each test case, output on a new line the total amount Chef made in a day.
+
+### Constraints
+- $1 \leq T \leq 100$
+- $1 \leq X, Y \leq 10$
+### Sample 1:
+Input
+Output
+
+```
+4
+3 1
+5 5
+4 7
+2 3
+
+```
+
+```
+1
+5
+10
+4
+
+```
+
+### Explanation:
+
+ **Test case $1$:**  Chef's daily goal was $3$. Since he sold only $1$ chocolate, he'll get only $1$ rupee.
+
+ **Test case $2$:**  Chef's daily goal was $5$. Since he sold $5$ chocolates, he'll get $5$ rupees.
+
+ **Test case $3$:**  Chef's daily goal was $4$. Since he sold $7$ chocolate, he'll get $4$ rupees for the $4$ chocolates as his daily goal and $2$ rupees per chocolate for the extra $3$ chocolates. The total amount he gets is $4+3\cdot 2 = 10$.
+
+ **Test case $4$:**  Chef's daily goal was $2$. Since he sold $3$ chocolate, he'll get $2$ rupees for the $2$ chocolates as his daily goal and $2$ rupees per chocolate for the extra $1$ chocolate. The total amount he gets is $2+1\cdot 2 = 4$.
+
+## Solution
+
+**Language:** Python  
+**Runtime:** N/A  
+**Memory:** N/A  
+**Submitted:** 2026-09-08T03:53:43.262Z  
+
+```py
+t = int(input())
+
+while t > 0:
+    x, y = map(int, input().split())
+
+    if y <= x:
+        print(y)
+    else:
+        extra = y - x
+        money = x + (extra * 2)
+        print(money)
+
+    t -= 1
+```
+
+---
+
+[View on CodeChef](https://www.codechef.com/problems/CANDYSTORE)
