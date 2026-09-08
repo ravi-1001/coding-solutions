@@ -60,7 +60,7 @@ YES
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-08T05:00:10.274Z  
+**Submitted:** 2026-09-08T05:01:58.500Z  
 
 ```py
 t = int(input())
@@ -75,18 +75,6 @@ while t > 0:
         print("NO")
 
     t -= 1
-    
-    t=int(input())
-    
-    while t > 0:
-        a , b , c = map(int, input().split())
-        
-        if a != b and b != c and a != c:
-            print("YES")
-        else:
-            print("NO")
-            
-        t -=1    
 ```
 
 ---
