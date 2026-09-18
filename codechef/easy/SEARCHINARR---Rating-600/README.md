@@ -57,18 +57,22 @@ NO
 
 ## Solution
 
-**Language:** Python  
+**Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-07T02:19:11.020Z  
+**Submitted:** 2026-09-18T16:26:41.421Z  
 
-```py
-def solve(N, X, A):
-    # write your code here  
-    if X in A :
-        return "YES"
-    else:
-        return "NO"
+```c_cpp
+string solve(int N, int X, const vector<int>& A) {
+    
+    for (int i = 0; i < N; i++) {
+        if (A[i] == X) {
+            return "YES";
+        }
+    }
+
+    return "NO";
+}
 ```
 
 ---
