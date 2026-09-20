@@ -53,23 +53,22 @@ Output: [0,1]
 ## Solution
 
 **Language:** Python  
-**Runtime:** 0 ms  
-**Memory:** 19.2 MB  
-**Submitted:** 2026-09-20T03:09:57.073Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 20.6 MB (beats 18.85%)  
+**Submitted:** 2026-09-20T03:11:31.533Z  
 
 ```py
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
-        seen = {}
+        hashmap = {}
 
-        for i in range(len(nums)):
-            needed = target - nums[i]
+        for i, num in enumerate(nums):
+            complement = target - num
 
-            if needed in seen:
-                return [seen[needed], i]
+            if complement in hashmap:
+                return [hashmap[complement], i]
 
-                seen[nums[i]] = i
-        
+            hashmap[num] = i
 ```
 
 ---
