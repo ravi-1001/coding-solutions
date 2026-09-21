@@ -55,37 +55,31 @@ merged: a p b q c   d
 
 ## Solution
 
-**Language:** C++  
-**Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 8.4 MB (beats 84.04%)  
-**Submitted:** 2026-09-21T17:25:11.444Z  
+**Language:** Python  
+**Runtime:** 35 ms (beats 95.96%)  
+**Memory:** 19.3 MB (beats 58.18%)  
+**Submitted:** 2026-09-21T17:34:28.327Z  
 
-```cpp
-class Solution {
-public:
-    string mergeAlternately(string word1, string word2) {
-        string ans = "";
+```py
+class Solution:
+    def mergeAlternately(ans, word1: str, word2: str) -> str:
+        ans = ""
 
-        int i = 0, j = 0;
+        i = 0
+        j = 0
 
-        while (i < word1.length() || j < word2.length()) {
-            if (i < word1.length()) {
-                ans += word1[i];
-                i++;
-            }
+        while i < len(word1) or j < len(word2):
 
-            if (j < word2.length()) {
-                ans += word2[j] ;
-                j++;
-            }
-        }
-
-        return ans;
-    }
-
-};
+            if i < len(word1):
+                ans += word1[i]
+                i += 1
+            if j < len(word2):
+                ans += word2[j]
+                j += 1 
         
-    
+        return ans
+
+        
 ```
 
 ---
