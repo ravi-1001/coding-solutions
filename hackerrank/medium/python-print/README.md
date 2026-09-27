@@ -38,14 +38,17 @@ Print the list of integers from $1$ through $n$ as a string, without spaces.
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-27T14:21:02.513Z  
+**Submitted:** 2026-09-27T14:22:41.063Z  
 
 ```py
 if __name__ == '__main__':
     n = int(input())
     
-    for i in range(1, n+1):
-        print(i, end="")
+    # for i in range(1, n+1):
+    #     print(i, end="")
+    
+    print(*range(1, n + 1), sep="")
+    
 
 ```
 
