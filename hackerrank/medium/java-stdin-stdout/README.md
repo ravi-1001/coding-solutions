@@ -1,4 +1,4 @@
-# Java Stdin and Stdout I
+# Java Stdin and Stdout II
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-yellow)
 
@@ -37,26 +37,25 @@ To make the problem easier, a portion of the code is already provided in the edi
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-28T17:06:17.277Z  
+**Submitted:** 2026-09-28T17:11:14.846Z  
 
 ```java
-import java.util.*;
+import java.util.Scanner;
 
 public class Solution {
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-
-        int a = scan.nextInt();
-        int b = scan.nextInt();
+        int i = scan.nextInt();
+        double d = scan.nextDouble();
         scan.nextLine();
-        int c = scan.nextInt();
+        String s = scan.nextLine();
 
-        System.out.println(a);
-        System.out.println(b);
-        System.out.println(c);
+        // Write your code here.
 
-        scan.close();
+        System.out.println("String: " + s);
+        System.out.println("Double: " + d);
+        System.out.println("Int: " + i);
     }
 }
 
