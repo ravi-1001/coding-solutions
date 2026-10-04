@@ -30,7 +30,7 @@ For floating-point number 5.5, its floor value 5 is printed.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-04T18:06:53.018Z  
+**Submitted:** 2026-10-04T18:07:04.976Z  
 
 ```java
 import java.util.Scanner;
